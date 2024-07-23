@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's turn"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3">
+
+        <Button android:id="@+id/btn00" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/btn01" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/btn02" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/btn10" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/btn11" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/btn12" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/btn20" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/btn21" style="@style/TicTacToeButton"/>
+        <Button android:id="@+id/btn22" style="@style/TicTacToeButton"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
